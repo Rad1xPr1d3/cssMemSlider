@@ -2,6 +2,9 @@ body {
     height: 100%;
     line-height: 24px;
     font-size: 30px;
+    background-image:  url(./imgMem/pictures_originals_2015_Backgrounds_Just_a_gray_background_095362_.jpg);
+    background-color: gray;
+
 }
 
 .wrapper {
@@ -12,16 +15,52 @@ body {
 }
 
 ._container {
-    max-width: 1200px;
+    width:  80%;
     margin: 0px auto;
     padding: 0 15px;
     box-sizing: content-box;
 }
-
+h1{
+    font-size: 1.7rem;
+    color: blanchedalmond;
+    font-family:monospace;
+    letter-spacing: 0.7rem;
+    text-shadow: 1px 1px 2px rgb(235, 235, 235), 0 0 1em blue, 0 0 0.2em blue;
+}
 /* -----HEADER ------------------------------------------------ */
 .header {
-    width: 100%;
-    left: 0;
-    top: 60px;
-    z-index: 50;
+    height: 55px;
+    background-color: grey;
 }
+.main{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-height: 100%;
+    background-color: grey;
+}
+.footer{
+margin-top: auto;
+height: 55px;
+background-color: grey;
+}
+
+
+/* -----SLIDER ------------------------------------------------ */
+.main__slider {
+    border: 2px solid black;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider__body {
+}
+.slider__line {
+    display: flex;
+    background: orangered;
+    transition: all ease 1s;
+}
+.slider__txt {
+}
+.slider__nav {
+}
+/* -----/SLIDER ------------------------------------------------ */
