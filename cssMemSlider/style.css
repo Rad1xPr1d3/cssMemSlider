@@ -37,6 +37,8 @@ h1{
     margin-bottom: 25px;
     min-height: 100%;
     background-color: grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .footer{
 margin-top: auto;
@@ -47,20 +49,55 @@ background-color: grey;
 
 /* -----SLIDER ------------------------------------------------ */
 .main__slider {
-    border: 2px solid black;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    
 }
 .slider__body {
+    border-radius: 35px;
+    padding-bottom: 15px;
+  
 }
 .slider__line {
     display: flex;
     background: orangered;
     transition: all ease 1s;
+    
+}
+.txt-and-nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .slider__txt {
 }
 .slider__nav {
+    display: flex;
 }
+.slider__button {
+height: 25px;
+width: 25px;
+display: flex;
+justify-content:end;
+cursor: pointer;
+}
+
+.slider__button:hover .slider__circle{
+    background-color: transparent;
+    transition: all ;
+}
+
+.slider__circle:active{
+background-color: transparent;
+}
+
+.slider__circle {
+height: 8px;
+width: 8px;
+border-radius: 50%;
+border: 2px solid rgb(43, 43, 252);
+background-color: rgb(43, 43, 252);
+}
+
 /* -----/SLIDER ------------------------------------------------ */
