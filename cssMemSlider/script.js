@@ -1,6 +1,6 @@
 const images = document.querySelectorAll('.slider__body .slider__line img');
 const sliderLine = document.querySelector('.slider__line');
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('.slider__button');
 let count = 0;
 let width;
 
@@ -17,8 +17,12 @@ function init(){
 window.addEventListener('resize', init);
 init();
 
-buttons.forEach( function(entry) {
-    entry.addEventListener('click', tapButton);
+buttons.forEach( btn=> {
+    btn.addEventListener('click', (e) =>{
+        const id = e.target.id;
+        console.log(id);
+        tapButton();
+    });
 });
 
 function tapButton(){
