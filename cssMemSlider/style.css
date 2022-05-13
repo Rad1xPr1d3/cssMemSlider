@@ -20,6 +20,7 @@ body {
     padding: 0 15px;
     box-sizing: content-box;
 }
+
 h1{
     font-size: 1.7rem;
     color: blanchedalmond;
@@ -29,8 +30,9 @@ h1{
 }
 /* -----HEADER ------------------------------------------------ */
 .header {
-    height: 55px;
+    height: auto;
     background-color: rgb(80, 79, 79);
+    padding-bottom: 10px;
 }
 .main{
     margin-top: 25px;
@@ -88,16 +90,11 @@ cursor: pointer;
 }
 
 .slider__button:hover .slider__circle{
-    background-color: transparent;
-    transition: all ;
     border: 2px solid rgb(240, 240, 250);
     background-color: rgb(240, 240, 250);
 }
 
-.slider__circle:active{
-background-color: transparent;
-border: 2px solid rgb(240, 240, 250);
-}
+
 
 .slider__circle {
 height: 8px;

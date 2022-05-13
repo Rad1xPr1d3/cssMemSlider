@@ -1,6 +1,8 @@
 const images = document.querySelectorAll('.slider__body .slider__line img');
 const sliderLine = document.querySelector('.slider__line');
 const buttons = document.querySelectorAll('.slider__button');
+const circles = document.querySelectorAll('.slider__circle');
+
 let txt = document.querySelector('.slider__txt');
 let count = 0;
 let width;
@@ -18,6 +20,7 @@ function init(){
 }
 window.addEventListener('resize', init);
 init();
+activeButton()
 
 buttons.forEach( btn=> {
     btn.addEventListener('click', (e) =>{
@@ -33,6 +36,7 @@ buttons.forEach( btn=> {
         }
         rollSlider();
         changeTxt();
+        activeButton();
     });
 });
 
@@ -42,4 +46,11 @@ function rollSlider(){
 
 function changeTxt(){
     txt.innerHTML = arr[count];
+}
+
+function activeButton(){
+    circles.forEach( item => {
+        item.style.backgroundColor = "rgb(136, 136, 255)";
+    });
+    circles[count].style.backgroundColor = "transparent";
 }
