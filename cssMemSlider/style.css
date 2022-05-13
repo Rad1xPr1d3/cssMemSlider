@@ -30,20 +30,20 @@ h1{
 /* -----HEADER ------------------------------------------------ */
 .header {
     height: 55px;
-    background-color: grey;
+    background-color: rgb(80, 79, 79);
 }
 .main{
     margin-top: 25px;
     margin-bottom: 25px;
     min-height: 100%;
-    background-color: grey;
+    background-color: rgb(80, 79, 79);
     padding-top: 15px;
     padding-bottom: 15px;
 }
 .footer{
 margin-top: auto;
 height: 55px;
-background-color: grey;
+background-color: rgb(80, 79, 79);
 }
 
 
@@ -69,10 +69,12 @@ background-color: grey;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow: hidden;
 }
 .slider__txt {
     font-family: monospace;
     font-size: 1.5rem;
+    animation: 3s ease-in 1s infinite reverse both running slidein;
 }
 .slider__nav {
     display: flex;
@@ -88,18 +90,21 @@ cursor: pointer;
 .slider__button:hover .slider__circle{
     background-color: transparent;
     transition: all ;
+    border: 2px solid rgb(240, 240, 250);
+    background-color: rgb(240, 240, 250);
 }
 
 .slider__circle:active{
 background-color: transparent;
+border: 2px solid rgb(240, 240, 250);
 }
 
 .slider__circle {
 height: 8px;
 width: 8px;
 border-radius: 50%;
-border: 2px solid rgb(43, 43, 252);
-background-color: rgb(43, 43, 252);
+border: 2px solid rgb(136, 136, 255);
+background-color: rgb(136, 136, 255);
 }
 
 /* -----/SLIDER ------------------------------------------------ */
