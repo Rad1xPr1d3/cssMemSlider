@@ -4,7 +4,7 @@ const buttons = document.querySelectorAll('.slider__button');
 let txt = document.querySelector('.slider__txt');
 let count = 0;
 let width;
-let arr =["РАЗ","ДВА", "ТРИ", "ЧЕТЫРЕ", "ПЯТЬ"];
+let arr =["every time","it's true", "first day", "goal", "maybe in future"];
 
 function init(){
     console.log('resize');

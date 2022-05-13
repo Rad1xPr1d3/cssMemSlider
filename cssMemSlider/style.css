@@ -71,6 +71,8 @@ background-color: grey;
     justify-content: space-between;
 }
 .slider__txt {
+    font-family: monospace;
+    font-size: 1.5rem;
 }
 .slider__nav {
     display: flex;
